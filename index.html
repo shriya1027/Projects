@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shriya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home/About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Engineer in the Making | Undergraduate|Second Year</p>
+                <h1>Hello, I'm <span>Shriya</span><br></h1>
+                <h2>pursuing Btech at DJ Sanghvi College of Engineering-2028</h2>
+            </div>
+        </div>
+    </div>
+
+    
+   
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    
+                    <h2>To-Do List</h2>
+                    <p>
+                       
+                    </p>
+                    <a href=" https://shriya1027.github.io/Projects/">Learn More</a>
+                </div>
+                <div>
+                    
+                    <h2>Dice Roller</h2>
+                    <p>
+                        
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    
+                    <h2>Rock Paper Scissors Game</h2>
+                    <p>
+                        
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="subtitle">My Skills</h1>
+            <div class="skills-section">
+            
+            <ul class="skills-list">
+               <li>Python</li>
+               <li>C/C++</li>
+               <li>Java</li>
+               <li>Machine Learning (Beginner)</li>
+               <li>HTML, CSS</li>
+             </ul>
+        </div>
+                  
+        <div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> shriyaketkar10@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 8591617313</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="S Resume-1.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="YOUR_FORMSPREE_URL" method="POST">
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    
+</body>
+</html>
