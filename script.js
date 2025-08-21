@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -48,3 +49,42 @@ ScrollReveal().reveal(".favourite__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+=======
+const inputBox=document.getElementById("input-box");
+const listContainer=document.getElementById("list-container");
+function addTask(){
+     if(inputBox.value===''){
+        alert("Write Something");
+     }
+     else{
+        let li=document.createElement("li");
+        li.innerHTML=inputBox.value;
+        listContainer.appendChild(li);
+        let span=document.createElement("span");
+        span.innerHTML="\u00d7";
+        li.appendChild(span);
+     }
+     inputBox.value="";
+     saveData();
+}
+
+listContainer.addEventListener("click",function(e){
+    if(e.target.tagName==="LI"){
+        e.target.classList.toggle("checked");
+
+    }
+    else if(e.target.tagName==="SPAN"){
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
+function saveData(){
+    localStorage.setItem("data",listContainer.innerHTML);
+}
+function showTask(){
+    listContainer.innerHTML=localStorage.getItem("data");
+
+}
+showTask();
+>>>>>>> b54f0f4bd076e2553d8a0e7a6cbb27bfee16c9e5
